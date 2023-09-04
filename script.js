@@ -8,8 +8,11 @@ function volume_sphere(radius) {
         // Calculate the volume using the formula: V = (4/3) * π * r^3
         const volume = (4 / 3) * Math.PI * Math.pow(radius, 3);
         
-        // Return the calculated volume as a string with 2 decimal places
-        return volume.toFixed(2);
+        // Format the calculated volume with exactly two decimal places
+        const formattedVolume = volume.toFixed(2);
+        
+        // Return the formatted volume as a string
+        return formattedVolume;
     } else {
         // If the input is not a valid number, return an error message
         return "Invalid input. Please enter a valid number for the radius.";
